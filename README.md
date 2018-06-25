@@ -6,4 +6,4 @@
 [Выполнено](https://classicpower.github.io/homework-1/)
 <hr>
 Техническое задание №2 | Срок до 24.06.2018<br>
-[Выполнено](https://classicpower.github.io/homework-2/)
+[Выполнено](https://classicpower.github.io/coworking/)
