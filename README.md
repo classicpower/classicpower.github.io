@@ -8,5 +8,5 @@ Coworking | Обучающий проект Loftschool
 [Интро](https://classicpower.github.io/coworking/)<br>
 [Главная](https://classicpower.github.io/main.html)<br>
 [Отзывы](https://classicpower.github.io/reviews.html)<br>
-[Тарифы](https://classicpower.github.io//prices.html)<br>
+[Тарифы](https://classicpower.github.io/prices.html)<br>
 
