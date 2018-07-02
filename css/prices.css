@@ -9,7 +9,7 @@ figure {
   margin-bottom: 44px;
 }
 .prices {
-  margin-bottom: 45px;
+  margin-bottom: 21px;
   font-family: 'GothamPro', "Arial Narrow", sans-serif;
 }
 .prices__title {
@@ -32,7 +32,7 @@ figure {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  padding: 0 18px 47px 33px;
+  padding: 0 18px 42px 33px;
   -webkit-box-align: center;
   align-items: center;
 }
@@ -85,7 +85,7 @@ figure {
   font-size: 18px;
   font-weight: bold;
   max-width: 250px;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 .prices__item-text {
   line-height: 21px;
@@ -96,6 +96,9 @@ figure {
 .prices__item-price,
 .prices__item-text {
   text-align: center;
+}
+.partner {
+  margin-left: 5px;
 }
 .partner__title {
   margin-bottom: 49px;
