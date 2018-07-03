@@ -98,7 +98,11 @@ figure {
   text-align: center;
 }
 .partner {
+<<<<<<< HEAD
   margin: 0 0 41px 5px;
+=======
+  margin: 0 0 40px 5px;
+>>>>>>> da0af0281bbc2faf272a0899f09e18ea8f1cc801
 }
 .partner__title {
   margin-bottom: 49px;
