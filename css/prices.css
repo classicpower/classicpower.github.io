@@ -9,7 +9,7 @@ figure {
   margin-bottom: 44px;
 }
 .prices {
-  margin-bottom: 21px;
+  margin-bottom: 29px;
   font-family: 'GothamPro', "Arial Narrow", sans-serif;
 }
 .prices__title {
@@ -98,7 +98,7 @@ figure {
   text-align: center;
 }
 .partner {
-  margin-left: 5px;
+  margin: 0 0 41px 5px;
 }
 .partner__title {
   margin-bottom: 49px;
