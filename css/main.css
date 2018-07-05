@@ -941,13 +941,6 @@ img {
   line-height: 30px;
 }
 /************reviews-page.css************/
-@font-face {
-  font-family: 'MyriadPro';
-  src: url('/fonts/MyriadPro/MyriadPro.eot');
-  src: url('/fonts/MyriadPro/MyriadPro.eot#iefix') format('embedded-opentype'), url('/fonts/MyriadPro/MyriadPro.woff') format('woff'), url('/fonts/MyriadPro/MyriadPro.ttf') format('truetype'), url('/fonts/MyriadPro/MyriadPro.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 .reviews {
   margin-bottom: 45px;
 }
@@ -993,9 +986,6 @@ img {
 .reviews__content-text {
   font-size: 18px;
   line-height: 30px;
-}
-.smile {
-  font-family: 'MyriadPro', "Arial Narrow", sans-serif;
 }
 .cta {
   background: #27273e;
