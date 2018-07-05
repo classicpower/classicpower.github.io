@@ -308,6 +308,7 @@ html {
 }
 body {
   font-family: 'GothamPro', "Arial Narrow", sans-serif;
+  font-weight: normal;
   background: #fff;
   color: #221f1f;
   -webkit-font-smoothing: antialiased;
@@ -365,6 +366,7 @@ img {
   display: flex;
 }
 .main-container {
+  margin: 45px 0 50px;
   background: #fff;
   -webkit-box-flex: 1;
   flex: 1;
@@ -496,7 +498,6 @@ img {
 /************header.css************/
 .header {
   background: #27273e;
-  margin-bottom: 65px;
 }
 .header__wrap {
   position: relative;
@@ -593,10 +594,6 @@ img {
   font-weight: 300;
   margin: auto 11px;
 }
-.header__img {
-  height: 359px;
-  background: #27273e url(../img/header/banner.jpg) center center no-repeat;
-}
 /************sidebar.css************/
 .menu__item {
   margin-bottom: 29px;
@@ -619,13 +616,13 @@ img {
   margin-top: -2px;
 }
 .menu__icon-main {
-  background: url(../img/icons/main.png) center center no-repeat;
+  background: url(/img/icons/main.png) center center no-repeat;
 }
 .menu__icon-feed {
-  background: url(../img/icons/feed.png) center center no-repeat;
+  background: url(/img/icons/feed.png) center center no-repeat;
 }
 .menu__icon-wallet {
-  background: url(../img/icons/wallet.png) center center no-repeat;
+  background: url(/img/icons/wallet.png) center center no-repeat;
 }
 .menu__title {
   font-size: 12px;
@@ -641,7 +638,7 @@ img {
   align-items: center;
   color: #ec1e79;
 }
-/************main.css************/
+/************main-container.css************/
 .sidebar {
   -webkit-box-flex: 0;
   flex: 0 1 160px;
@@ -686,7 +683,7 @@ img {
 }
 /************pagination.css************/
 .pagination {
-  margin-bottom: 74px;
+  margin-bottom: 20px;
 }
 .pagination__wrap {
   display: -webkit-box;
@@ -698,7 +695,6 @@ img {
 }
 .pagination__page {
   color: #656464;
-  font-family: Roboto, "Arial Narrow", sans-serif;
   font-size: 14px;
   font-weight: 300;
   margin-right: 20px;
@@ -706,7 +702,7 @@ img {
 .pagination__control {
   width: 6px;
   height: 10px;
-  background-image: url(../img/icons/arrow.png);
+  background-image: url(/img/icons/arrow.png);
   background-repeat: no-repeat;
 }
 .pagination__control-right {
@@ -744,7 +740,6 @@ img {
 }
 .pagination__link {
   color: #221f1f;
-  font-family: Roboto, "Arial Narrow", sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
@@ -815,7 +810,7 @@ img {
   height: 20px;
   width: 20px;
   display: block;
-  background: url(../img/icons/social-sprite.png) 0 0 no-repeat;
+  background: url(/img/icons/social-sprite.png) 0 0 no-repeat;
 }
 .footer__social-icon-vk:hover,
 .footer__social-icon-fb:hover,
@@ -842,13 +837,20 @@ img {
 }
 /************PAGE************/
 /************main-page.css************/
+.about {
+  background: #27273e;
+  margin-bottom: 20px;
+}
+.about__img {
+  height: 359px;
+  background: #27273e url(/img/header/banner.jpg) center center no-repeat;
+}
 .content {
   margin-bottom: 72px;
 }
 .content__title {
   margin-bottom: 64px;
   color: #221f1f;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
   font-size: 49px;
   line-height: 37px;
   font-weight: bold;
@@ -872,7 +874,6 @@ img {
 }
 .content__blurb-title {
   color: #221f1f;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -881,7 +882,6 @@ img {
   text-align: center;
 }
 .content__blurb-text {
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
   font-size: 18px;
   line-height: 30px;
 }
@@ -948,17 +948,8 @@ img {
   font-weight: normal;
   font-style: normal;
 }
-.header {
-  background: #27273e;
-  margin-bottom: 44px;
-}
-.menu__link-current.menu__link::before {
-  content: "";
-  background: url(../img/icons/feed_icon.png) center center no-repeat;
-}
 .reviews {
   margin-bottom: 45px;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
 }
 .reviews__title {
   margin-bottom: 36px;
@@ -976,7 +967,7 @@ img {
   flex: 0 1 160px;
   width: 160px;
   height: 160px;
-  background: url(../img/reviews/logo-review-grey.jpg) no-repeat;
+  background: url(/img/reviews/logo-review-grey.jpg) no-repeat;
   border-radius: 50%;
 }
 .reviews__img img {
@@ -1006,29 +997,16 @@ img {
 .smile {
   font-family: 'MyriadPro', "Arial Narrow", sans-serif;
 }
-.border {
-  margin-bottom: 23px;
-}
-.pagination {
-  margin-bottom: 61px;
-}
-.pagination__wrap {
-  margin-left: -104px;
-}
-.pagination__page,
-.pagination__link {
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
-}
 .cta {
   background: #27273e;
-  margin-bottom: 55px;
+  margin: 43px 0 55px;
 }
 .cta__wrap {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
-  background: url(../img/reviews/sales50.png) no-repeat;
+  background: url(/img/reviews/sales50.png) no-repeat;
   margin-left: 13px;
 }
 .cta__text {
@@ -1037,7 +1015,6 @@ img {
   height: 174px;
   padding: 40px 0 49px;
   box-sizing: border-box;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
   font-weight: 300;
   color: #fff;
   font-size: 18px;
@@ -1049,7 +1026,7 @@ img {
   color: #ec1e79;
 }
 .form {
-  margin-bottom: 37px;
+  margin-bottom: -13px;
 }
 .form__wrap {
   max-width: 700px;
@@ -1062,7 +1039,6 @@ img {
   flex-direction: column;
   padding: 51px 70px;
   box-sizing: border-box;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
   font-weight: 300;
   color: #221f1f;
   font-size: 14px;
@@ -1158,7 +1134,6 @@ img {
 .form__button {
   background: #27273e;
   color: #ffffff;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1217,13 +1192,8 @@ img {
   margin: auto;
 }
 /************prices-page.css************/
-.header {
-  background: #27273e;
-  margin-bottom: 44px;
-}
 .prices {
   margin-bottom: 29px;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
 }
 .prices__title {
   margin-bottom: 41px;
@@ -1311,12 +1281,11 @@ img {
   text-align: center;
 }
 .partner {
-  margin: 0 0 40px 5px;
+  margin: 0 0 -8px 5px;
 }
 .partner__title {
   margin-bottom: 49px;
   color: #221f1f;
-  font-family: 'GothamPro', "Arial Narrow", sans-serif;
   font-size: 49px;
   line-height: 37px;
   font-weight: bold;

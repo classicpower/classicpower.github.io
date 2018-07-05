@@ -1,0 +1,76 @@
+@import "../vars.less";
+.footer {
+  background: @background;
+  position: relative;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    height: 77px;
+  }
+  &__copyright {
+    flex: 0 1 270px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    &-link {
+      font-weight: bold;
+      text-decoration: underline;
+      color: inherit;
+    }
+    &-author {
+      font-weight: bold;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    &-link {
+      margin-left: -99px;
+    }
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 172px;
+    &-title {
+      text-align: right;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 9px;
+    }
+    &-icons {
+      display: flex;
+    }
+    &-icon {
+      margin-right: 10px;
+      height: 20px;
+      width: 20px;
+      display: block;
+      background: url(/img/icons/social-sprite.png) 0  0 no-repeat;
+      &-vk, &-fb, &-google, &-twitter, &-mail{
+        &:hover{
+          background-position-y: bottom;
+        }
+      }
+      &-fb{
+        background-position-x: -100px;
+      }
+      &-google{
+        background-position-x: -200px;
+      }
+      &-twitter{
+        background-position-x: -300px;
+      }
+      &-mail{
+        background-position-x: right;
+      }
+    }
+    &-link {
+      padding: 10px;
+      font-size: 0;
+    }
+  }
+}
