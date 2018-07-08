@@ -5,7 +5,7 @@
   &__wrap {
     display: flex;
     align-items: center;
-    height: 77px;
+    min-height: 77px;
   }
   &__copyright {
     flex: 0 1 270px;
@@ -43,29 +43,64 @@
     }
     &-icons {
       display: flex;
+      ;
     }
     &-icon {
+      position: relative;
       margin-right: 10px;
-      height: 20px;
-      width: 20px;
-      display: block;
-      background: url(/img/icons/social-sprite.png) 0  0 no-repeat;
-      &-vk, &-fb, &-google, &-twitter, &-mail{
-        &:hover{
-          background-position-y: bottom;
-        }
+      &:hover &-vk, &:hover &-fb, &:hover &-google, &:hover &-twitter, &:hover &-mail {
+        opacity: 0;
+      }
+      &:hover &-vk-hover, &:hover &-fb-hover, &:hover &-google-hover, &:hover &-twitter-hover, &:hover &-mail-hover {
+        opacity: 1;
+      }
+      &-vk, &-fb, &-google, &-twitter, &-mail {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        display: block;
+        transition: .5s;
+        opacity: 1;
+        font-size: 0;
+      }
+      &-vk{
+        background: url(../img/icons/social-sprite.png) 0 0 no-repeat;
       }
       &-fb{
-        background-position-x: -100px;
+        background: url(../img/icons/social-sprite.png) -100px 0 no-repeat;
       }
       &-google{
-        background-position-x: -200px;
+        background: url(../img/icons/social-sprite.png) -200px 0 no-repeat;
       }
       &-twitter{
-        background-position-x: -300px;
+        background: url(../img/icons/social-sprite.png) -300px 0 no-repeat;
       }
       &-mail{
-        background-position-x: right;
+        background: url(../img/icons/social-sprite.png) -400px 0 no-repeat;
+      }
+      &-vk-hover, &-fb-hover, &-google-hover, &-twitter-hover, &-mail-hover {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        display: block;
+        transition: .5s;
+        opacity: 0;
+        font-size: 0;
+      }
+      &-vk-hover{
+        background: url(../img/icons/social-sprite.png) 0 bottom no-repeat;
+      }
+      &-fb-hover{
+        background: url(../img/icons/social-sprite.png) -100px bottom no-repeat;
+      }
+      &-google-hover{
+        background: url(../img/icons/social-sprite.png) -200px bottom no-repeat;
+      }
+      &-twitter-hover{
+        background: url(../img/icons/social-sprite.png) -300px bottom no-repeat;
+      }
+      &-mail-hover{
+        background: url(../img/icons/social-sprite.png) -400px bottom no-repeat;
       }
     }
     &-link {

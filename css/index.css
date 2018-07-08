@@ -480,6 +480,8 @@ body.overlay:before {
   padding: 13px 0;
   z-index: 2;
   text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 .link:hover {
   background: #ec1e79;

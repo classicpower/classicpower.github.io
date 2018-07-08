@@ -20,6 +20,7 @@
     color: #fff;
     font-size: 21px;
     font-weight: bold;
+    transition: .5s;
     &:hover {
       text-decoration: underline;
     }
@@ -39,18 +40,23 @@
     padding: 0;
     line-height: 1.7;
     outline: none;
+    transition: .5s;
     &:hover {
       color: #5dd1f8;
     }
     &:hover+& {
       &-dropdown {
         right: 0;
+        opacity: 1;
+        
       }
     }
     &-dropdown {
       position: absolute;
       top: 89px;
       right: -9999px;
+      transition: opacity .9s;
+      opacity: 0;
 
     }
     &-rectangle {
