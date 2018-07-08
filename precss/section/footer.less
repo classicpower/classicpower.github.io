@@ -46,65 +46,45 @@
       ;
     }
     &-icon {
-      position: relative;
       margin-right: 10px;
-      &:hover &-vk, &:hover &-fb, &:hover &-google, &:hover &-twitter, &:hover &-mail {
-        opacity: 0;
-      }
-      &:hover &-vk-hover, &:hover &-fb-hover, &:hover &-google-hover, &:hover &-twitter-hover, &:hover &-mail-hover {
-        opacity: 1;
-      }
-      &-vk, &-fb, &-google, &-twitter, &-mail {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        display: block;
-        transition: .5s;
-        opacity: 1;
-        font-size: 0;
-      }
+      height: 20px;
+      width: 20px;
+      display: block;
+      background: #d4d4d8 url(../img/icons/soc-sprite.png) 0  0 no-repeat;
+      border-radius: 50%;
+      transition: .5s;
       &-vk{
-        background: url(../img/icons/social-sprite.png) 0 0 no-repeat;
+        &:hover{
+          background: @pink url(../img/icons/soc-sprite.png) 0  0 no-repeat;
+        }    
       }
       &-fb{
-        background: url(../img/icons/social-sprite.png) -100px 0 no-repeat;
+        background-position-x: -100px;
+        &:hover{
+          background: @pink url(../img/icons/soc-sprite.png) -100px  0 no-repeat;       
+        }   
       }
       &-google{
-        background: url(../img/icons/social-sprite.png) -200px 0 no-repeat;
+        background-position-x: -200px;
+        &:hover{
+          background: @pink url(../img/icons/soc-sprite.png) -200px  0 no-repeat;       
+        } 
       }
       &-twitter{
-        background: url(../img/icons/social-sprite.png) -300px 0 no-repeat;
+        background-position-x: -300px;
+        &:hover{
+          background: @pink url(../img/icons/soc-sprite.png) -300px  0 no-repeat;       
+        } 
       }
       &-mail{
-        background: url(../img/icons/social-sprite.png) -400px 0 no-repeat;
-      }
-      &-vk-hover, &-fb-hover, &-google-hover, &-twitter-hover, &-mail-hover {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        display: block;
-        transition: .5s;
-        opacity: 0;
-        font-size: 0;
-      }
-      &-vk-hover{
-        background: url(../img/icons/social-sprite.png) 0 bottom no-repeat;
-      }
-      &-fb-hover{
-        background: url(../img/icons/social-sprite.png) -100px bottom no-repeat;
-      }
-      &-google-hover{
-        background: url(../img/icons/social-sprite.png) -200px bottom no-repeat;
-      }
-      &-twitter-hover{
-        background: url(../img/icons/social-sprite.png) -300px bottom no-repeat;
-      }
-      &-mail-hover{
-        background: url(../img/icons/social-sprite.png) -400px bottom no-repeat;
+        background-position-x: -400px;
+        &:hover{
+          background: @pink url(../img/icons/soc-sprite.png) -400px  0 no-repeat;       
+        } 
       }
     }
     &-link {
-      padding: 10px;
+      padding: 15px 10px 6px;
       font-size: 0;
     }
   }
