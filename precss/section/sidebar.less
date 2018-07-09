@@ -9,6 +9,11 @@
       }
       .menu__title {
         color: #000;
+        &:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
       }
     }
     &-active .menu__title{
@@ -63,11 +68,6 @@
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
       transition: all 0.3s ease-in-out 0s;
-    }
-    &:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
     }
   }
   &__link {
