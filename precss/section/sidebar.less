@@ -11,6 +11,20 @@
         color: #000;
       }
     }
+    &-active .menu__title{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        visibility: visible;
+        transform: scaleX(1);
+        background-color: #000;
+      }
+    }
   }
   &__icon {
     transition: .5s;
@@ -30,15 +44,33 @@
     }
   }
   &__title {
+    position: relative;
     font-size: 12px;
     text-transform: uppercase;
     line-height: 1.7;
     letter-spacing: 1.2px;
     font-weight: bold;
     transition: .5s;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+    &:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
   }
   &__link {
-
     display: flex;
     align-items: center;
     color: @pink;

@@ -524,14 +524,33 @@ img {
   flex-direction: column;
 }
 .header__tel {
+  position: relative;
   color: #fff;
   font-size: 21px;
   font-weight: bold;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
-.header__tel:hover {
-  text-decoration: underline;
+.header__tel:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.header__tel:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .header__time {
   position: relative;
@@ -619,6 +638,22 @@ img {
 .menu__item:hover .menu__title {
   color: #000;
 }
+.menu__item-active .menu__title {
+  position: relative;
+}
+.menu__item-active .menu__title:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #000;
+}
 .menu__icon {
   -webkit-transition: .5s;
   transition: .5s;
@@ -638,6 +673,7 @@ img {
   background: url(/img/icons/wallet.png) center center no-repeat;
 }
 .menu__title {
+  position: relative;
   font-size: 12px;
   text-transform: uppercase;
   line-height: 1.7;
@@ -645,6 +681,27 @@ img {
   font-weight: bold;
   -webkit-transition: .5s;
   transition: .5s;
+}
+.menu__title:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.menu__title:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .menu__link {
   display: -webkit-box;
@@ -1136,16 +1193,15 @@ img {
   color: #221f1f;
   font-size: 14px;
   font-weight: 300;
-  border: 1px solid #ec1e79;
+  border: none;
   padding: 10px;
   box-sizing: border-box;
   height: 90px;
   border-radius: 2px;
   resize: none;
 }
-.form__textarea:active,
 .form__textarea:focus {
-  outline: none;
+  outline: 1px solid #ec1e79;
 }
 .form__button {
   background: #27273e;
