@@ -7,13 +7,12 @@
   Корпоративный сайт - "Coworking" | Обучающий проект Loftschool<br>
 2. Веб для начинающих<br>
   Лендинг - "Burgers" | Обучающий проект Loftschool<br>
+3. Продвинутый курс по веб-разработке<br>
+  Сайт портфолио | Обучающий проект Loftschool<br>
 <hr>
 Содержание:<br>
-* Coworking<br>
-[Интро](https://classicpower.github.io/coworking/)<br>
-[Главная](https://classicpower.github.io/coworking/main.html)<br>
-[Отзывы](https://classicpower.github.io/coworking/reviews.html)<br>
-[Тарифы](https://classicpower.github.io/coworking/prices.html)<br>
-** Burgers<br>
-[Главная](https://classicpower.github.io/burgers)<br>
+[Coworking](https://classicpower.github.io/coworking/)<br>
+[Burgers](https://classicpower.github.io/burgers/src/)<br>
+[Portfolio](https://classicpower.github.io/portfolio/dist/)<br>
+
 
